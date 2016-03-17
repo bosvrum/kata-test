@@ -1,4 +1,7 @@
 <h1>Show languages</h1>
-<% @languages.each do |l| %>
-  <%= l.name %>
-<% end %>  
+<% @languages.each do |language| %> <br>
+  <% language.frameworks.each do |f| %>
+    <%= f.name %> <br>
+  <% end %>  
+  <%= language.name %>
+<% end %>
